@@ -1,0 +1,7 @@
+{
+  "colors": [
+    { "name": "red", "hue": 0 },
+    { "name": "blue", "hue": 240 },
+    { "name": "purple", "hue": 270 }
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Colors</title>
+    <meta
+      name="description"
+      content="This app is all about colors: make 'em, name 'em, or randomly generate 'em!"
+    />
+    <meta
+      name="keywords"
+      content="vanilla, colors, name, app, random, generate, generator, hue, create"
+    />
+    <meta name="author" content="David Hartsough" />
+    <link rel="canonical" href="https://davidhartsough.com/vanilla-color-app" />
+    <meta property="og:title" content="Colors" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://davidhartsough.com/vanilla-color-app"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:description"
+      content="This app is all about colors: make 'em, name 'em, or randomly generate 'em!"
+    />
+    <meta property="og:site_name" content="Colors" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Colors",
+        "url": "https://davidhartsough.com/vanilla-color-app",
+        "headline": "Colors",
+        "keywords": "vanilla, colors, name, app, random, generate, generator, hue, create",
+        "description": "This app is all about colors: make 'em, name 'em, or randomly generate 'em!",
+        "author": {
+          "@type": "Person",
+          "name": "David Hartsough"
+        }
+      }
+    </script>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Colors" />
+    <meta name="theme-color" content="#198bed" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Colors" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-TileColor" content="#198bed" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <main id="root">
+      <section>
+        <div class="color-creator">
+          <label>
+            Name:
+            <input type="text" id="name" />
+          </label>
+          <label>
+            Hue:
+            <input
+              type="number"
+              id="hue"
+              min="0"
+              max="355"
+              step="5"
+              value="0"
+            />
+          </label>
+          <div class="actions">
+            <button id="create">Create color</button>
+            <p style="margin-right: 8px;">Or...</p>
+            <button id="generate">Generate random color</button>
+          </div>
+        </div>
+        <div id="loader"></div>
+        <div id="color-list">
+          <p>Click a color to see a different saturation.</p>
+          <ul id="colors"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
